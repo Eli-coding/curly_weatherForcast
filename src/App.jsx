@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import SearchBar from './components/searchBar.jsx'
+import WeatherDisplay from './components/WeatherDisplay.jsx';
 
 function App() {
   const [location, setLocation] = useState('');
@@ -17,15 +18,16 @@ function App() {
   const data = await response.json();
   
   setWeatherData(data);
-  console.log(data);
+  // console.log(data);
   setLoadingState(false);
 };
-
+   
   return (
      <div>
-      <h1>Curl Weather App</h1>
+      <h1>Curly Weather App</h1>
        <SearchBar onSearch={handleSearch} />
-    {loadingState && <p>Loading...</p>}
+     {loadingState && <p>Loading...</p>}
+     {weatherData && <WeatherDisplay weatherData={weatherData} />}
     </div>
   );
 }

@@ -10,13 +10,14 @@ function SearchBar({ onSearch }) {
 
   return (
     <div>
-      <label htmlFor="searchBar">Enter your location:</label>
+      <label htmlFor="searchBar">Enter your location </label>
       <input
         type="text"
         id="searchBar"
         value={input}
         onChange={(e) => setInput(e.target.value)}
       />
+    
       <button onClick={handleSubmit}>Search</button>
     </div>
   );
