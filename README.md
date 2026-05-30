@@ -1,6 +1,6 @@
-# 🌀 Raíz Rizada — Curly Hair Weather Forecast
+# 🌀 Rizado Forecast — Forecasting Better Curl Days
 
-A weather app built for curly girls. Search any city and get a real-time curl forecast based on humidity and temperature — no more guessing if today is a wash-and-go or a protective style day.
+A weather app built for curly haired folks. Search any city and get a real-time curl forecast based on humidity and temperature — no more guessing if today is a wash-and-go or a protective style day.
 
 **[Live Demo](https://curly-weather-forcast.vercel.app)** | Built with React + Vite | Deployed on Vercel
 
@@ -8,7 +8,7 @@ A weather app built for curly girls. Search any city and get a real-time curl fo
 
 ## About
 
-Standard weather apps tell you temperature and humidity. Raíz Rizada tells you what that actually means for your curls. Built for 3B high porosity hair as a baseline, with plans to expand to personalized profiles based on curl type and porosity.
+Standard weather apps tell you temperature and humidity. Rizado Forecast tells you what that actually means for your curls. Built for 3B high porosity hair as a baseline, with plans to expand to personalized profiles based on curl type and porosity.
 
 ---
 
@@ -28,11 +28,11 @@ Standard weather apps tell you temperature and humidity. Raíz Rizada tells you 
 
 | Result | Condition |
 |--------|-----------|
-| 🌟 Wash and Go Friendly | Humidity < 40%, Temp < 20°C |
-| ✅ Good Curl Day | Humidity 40–60%, Temp 15–25°C |
-| 💨 Diffuser Recommended | Humidity 60–75% |
-| ⚠️ Frizz Alert | Humidity 75–89%, Temp > 25°C |
-| 🛡️ Protective Style Day | Humidity > 90% |
+|  Wash and Go Friendly | Humidity < 40%, Temp < 20°C |
+|  Good Curl Day | Humidity 40–60%, Temp 15–25°C |
+|  Diffuser Recommended | Humidity 60–75% |
+|  Frizz Alert | Humidity 75–89%, Temp > 25°C |
+|  Protective Style Day | Humidity > 90% |
 
 ---
 
