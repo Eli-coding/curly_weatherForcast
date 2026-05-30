@@ -16,6 +16,9 @@ function SearchBar({ onSearch }) {
         id="searchBar"
         value={input}
         onChange={(e) => setInput(e.target.value)}
+         onKeyDown={(e) => {
+          if (e.key === 'Enter') handleSubmit();
+          }}
       />
     
       <button onClick={handleSubmit}>Search</button>
