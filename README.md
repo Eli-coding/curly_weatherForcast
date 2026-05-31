@@ -1,4 +1,6 @@
-#Forecasting Better Curl Days with Rizado Forecast App  
+# Rizado Forecast
+
+>Forecasting Better Curl Days
 
 Rizado Forecast is a weather app designed for people with curly hair who have learned the hard way that humidity is not just “weather”… it’s a personality trait.
 
