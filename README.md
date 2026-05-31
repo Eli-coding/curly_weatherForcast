@@ -1,15 +1,12 @@
-# 🌀 Rizado Forecast — Forecasting Better Curl Days
+#Forecasting Better Curl Days with Rizado Forecast App  
 
-A weather app built for curly haired folks. Search any city and get a real-time curl forecast based on humidity and temperature — no more guessing if today is a wash-and-go or a protective style day.
+Rizado Forecast is a weather app designed for people with curly hair who have learned the hard way that humidity is not just “weather”… it’s a personality trait.
+
+Instead of guessing whether today is a wash-and-go day or a “throw it in a bun and hope for the best” situation, Rizado Forecast translates real-time weather data into a simple curl forecast.
+
+Just search any city and get a curl-friendly outlook based on humidity, temperature, and overall frizz risk—so you can actually plan your hair instead of negotiating with it in the bathroom mirror at 7am.
 
 **[Live Demo](https://curly-weather-forcast.vercel.app)** | Built with React + Vite | Deployed on Vercel
-
----
-
-## About
-
-Standard weather apps tell you temperature and humidity. Rizado Forecast tells you what that actually means for your curls. Built for 3B high porosity hair as a baseline, with plans to expand to personalized profiles based on curl type and porosity.
-
 ---
 
 ## Features
