@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import './App.css'
-import SearchBar from './components/searchBar.jsx'
-import WeatherDisplay from './components/weatherDisplay.jsx';
-import CurlForecast from './components/CurlForecast';
+import HairQuiz from './components/HairQuiz';
+import Location from './components/Location';
+import Dashboard from './components/Dashboard';
+import Landing from './components/Landing';
 function App() {
-  const [location, setLocation] = useState('');
   const [weatherData, setWeatherData] = useState(null);
   const [loadingState, setLoadingState] = useState(false);
   const [invalidCity, setInvalidCity] = useState('');
+  const [screen, setScreen] = useState('landing');
+  const [hairData, setHairData] = useState(null);
 
   const handleSearch = async (location) => {
   setLoadingState(true);
@@ -27,22 +29,39 @@ function App() {
 
   setInvalidCity('');
   setWeatherData(data);
+  setScreen('dashboard');
   setLoadingState(false);
 };
 
+ return (
+  <div>
+    {screen === 'landing' && (
+      <Landing startCurlQuizz={() => setScreen('quiz')} />
+    )}
 
+    {screen === 'quiz' && (
+      <HairQuiz onComplete={(hairProfile) => {
+        setHairData(hairProfile);
+        setScreen('location');
+      }} />
+    )}
+
+    {screen === 'location' && (
+      <Location onSearch={handleSearch} error={invalidCity} />
+
+    )}
+
+    {screen === 'dashboard' && (
+      <Dashboard
+        weatherData={weatherData}
+        hairData={hairData}
+        loadingState={loadingState}
+      />
+    )}
+  </div>
+);
+}
    
-  return (
-     <div>
-      <h1>Curly Weather App</h1>
-       <SearchBar onSearch={handleSearch} />
-       {loadingState && <p>Loading...</p>}
-       {invalidCity && <p style={{color: 'red'}}>{invalidCity}</p>}
-       {weatherData && <WeatherDisplay weatherData={weatherData} />}
-       {weatherData && <CurlForecast weatherData={weatherData} />}
-    
-    </div>
-  );
-};
+ 
 
 export default App;
