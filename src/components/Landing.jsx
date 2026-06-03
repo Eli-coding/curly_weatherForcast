@@ -2,6 +2,8 @@ function Landing({ startCurlQuizz}){
 
 return(
 
+    
+
   <div style={{
     minHeight: '100vh',
     display: 'flex',
@@ -10,7 +12,12 @@ return(
     justifyContent: 'center',
     padding: '50px 30px',
     position: 'relative',
-    overflow: 'hidden'
+    overflow: 'hidden',
+    backgroundImage: `
+    repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,45,120,0.15) 20px, rgba(255,45,120,0.15) 22px),
+    repeating-linear-gradient(-45deg, transparent, transparent 30px, rgba(0,245,212,0.1) 30px, rgba(0,245,212,0.1) 32px)
+    `,
+    backgroundColor: '#1a0533',
   }}>
     <h1 style={{
       fontFamily: 'Bungee, sans-serif',
