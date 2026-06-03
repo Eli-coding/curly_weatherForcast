@@ -31,19 +31,19 @@ function Location({ onSearch, error }) {
       }}>
 
         {/* Geo shapes */}
-        <div style={{ position: 'absolute', width: 0, height: 0, borderLeft: '20px solid transparent', borderRight: '20px solid transparent', borderBottom: '35px solid #FFE600', bottom: '120px', right: '30px', opacity: 0.5 }} />
+        {/* <div style={{ position: 'absolute', width: 0, height: 0, borderLeft: '20px solid transparent', borderRight: '20px solid transparent', borderBottom: '35px solid #FFE600', bottom: '120px', right: '30px', opacity: 0.5 }} />
         <div style={{ position: 'absolute', width: '55px', height: '55px', borderRadius: '50%', background: '#FF2D78', top: '30px', right: '25px', opacity: 0.35 }} />
-        <div style={{ position: 'absolute', width: '50px', height: '12px', background: '#00F5D4', top: '80px', left: '20px', transform: 'rotate(15deg)', opacity: 0.45 }} />
+        <div style={{ position: 'absolute', width: '50px', height: '12px', background: '#00F5D4', top: '80px', left: '20px', transform: 'rotate(15deg)', opacity: 0.45 }} /> */}
 
-        <p style={{ fontSize: '11px', fontWeight: '700', letterSpacing: '3px', color: '#BF5FFF', textTransform: 'uppercase' }}>
+        <p style={{ fontSize: '13px', fontWeight: '700', letterSpacing: '3px', color: '#BF5FFF', textTransform: 'uppercase' }}>
           Almost there ✦
         </p>
 
-        <h2 style={{ fontFamily: 'Ranchers, cursive', fontSize: '52px', lineHeight: 0.95, color: '#F5F5F5' }}>
-          Where<br />you <span style={{ color: '#FFE600' }}>at?</span>
+        <h2 style={{ fontFamily: 'Ranchers, cursive', fontSize: '60px', lineHeight: 0.95, color: '#F5F5F5' }}>
+          W H E R E<br />Y O U  <span style={{ color: '#FFE600' }}> <br />A T ?</span>
         </h2>
 
-        <p style={{ fontSize: '14px', color: '#ccc', lineHeight: '1.5' }}>
+        <p style={{ fontSize: '17px', color: '#ccc', lineHeight: '1.5' }}>
           We need your city to pull real-time humidity and temperature for your curl forecast.
         </p>
 
