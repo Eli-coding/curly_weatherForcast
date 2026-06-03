@@ -1,8 +1,8 @@
-# Rizado Forecast
+# Raiz Rizada
 
 >Forecasting Better Curl Days
 
-Rizado Forecast is a weather app designed for people with curly hair who have learned the hard way that humidity is not just “weather”… it’s a personality trait.
+Raiz Rizada is a weather app designed for people with curly hair who have learned the hard way that humidity is not just “weather”… it’s a personality trait.
 
 Instead of guessing whether today is a wash-and-go day or a “throw it in a bun and hope for the best” situation, Rizado Forecast translates real-time weather data into a simple curl forecast.
 
