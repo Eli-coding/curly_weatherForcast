@@ -3,72 +3,57 @@ export const questions = [
     id: 1,
     question: "How would you describe your curl pattern?",
     answers: [
-      { text: "A) Loose S-waves, mostly flat (2A/2B)"},
-      { text: "B) Defined curls, medium to tight (2C/3A)"},
-      { text: "C) Tight curls, very defined (3B/3C)"},
-      { text: "D) Very tight curls, almost straight (4A/4B)" },
-      { text: "E) Extremely tight curls, very defined (4C/4D)", points: { chihuahua: 1 } },
-      { text: "F) Very loose waves, mostly flat (2A/2B)", points: { corgi: 1 } }
+      { text: "Loose S-waves, mostly flat (2A/2B)", curlType: "wavy", porosityPoints: 0 },
+      { text: "Defined S-waves with some volume (2C)", curlType: "wavy", porosityPoints: 0 },
+      { text: "Bouncy spirals, quarter to penny-sized (3A/3B)", curlType: "curly", porosityPoints: 0 },
+      { text: "Tight corkscrews or coils, pencil-sized or smaller (3C/4A/4B/4C)", curlType: "coily", porosityPoints: 0 },
+
+      
     ]
   },
   {
     id: 2,
-    question: "Your debugging process looks like:",
+    question: "How much shrinkage do you experience when your hair dries?",
     answers: [
-      { text: "console.log(EVERYTHING), Google frantically, maybe cry a little 🐶", points: { puppy: 1 } },
-      { text: "Team debugging session! Let's pair on this! More eyes are better!", points: { golden: 1 } },
-      { text: "Binary search the problem, use proper debugging tools, write test to prevent regression", points: { collie: 1 } },
-      { text: "*Loud verbal processing for entire office to hear*", points: { husky: 1 } },
-      { text: "Fight the code until it submits", points: { chihuahua: 1 } },
-      { text: "Isolate issue, fix, done", points: { corgi: 1 } },
-      { text: "Carefully add logging, terrified I'll break something else", points: { dane: 1 } },
-      { text: "Start debugging X, discover Y is also broken, investigate Z, forget what X was", points: { beagle: 1 } },
-      { text: "Try 5 things rapidly, one works, ship it", points: { greyhound: 1 } },
-      { text: "Borrala, le pegas fuego y le hechas agua bendita, eso puede que solucione el problema 🤣", points:{husky:1,chihuahua:1,corgi:1}}
+      { text: "Little to none — what I see wet is what I get" , porosityPoints: 0},
+      { text: "About 25-50% — noticeable but manageable", porosityPoints: 0 },
+      { text: "50-75% — significantly shorter when dry", porosityPoints: 0 },
+      { text: "75%+ — looks completely different dry vs wet", porosityPoints: 0 }
+    
+     
     ]
   },
   {
     id: 3,
-    question: "Your Git commit messages are typically:",
+    question: "How does your hair absorb and retain moisture?",
     answers: [
-      { text: "i think i did it? pls work 🙏 or just asdfasdf", points: { puppy: 1 } },
-      { text: "Added awesome new feature! Team is gonna love this! 🎉✨", points: { golden: 1 } },
-      { text: "feat(auth): Implement OAuth2.0 with PKCE flow per RFC-7636", points: { collie: 1 } },
-      { text: "FINALLY!!! FIXED THE THING THAT WAS DRIVING ME INSANE!!!", points: { husky: 1 } },
-      { text: "MADE IT WORK. DEAL WITH IT.", points: { chihuahua: 1 } },
-      { text: "fix bug", points: { corgi: 1 } },
-      { text: "Sorry, I think I broke something in my last commit, this might fix it?", points: { dane: 1 } },
-      { text: "Started fixing login, found issue in nav, also updated footer", points: { beagle: 1 } },
-      { text: "updates *48 files changed*", points: { greyhound: 1 } }
+      { text: "Water beads up and sits on my hair, takes forever to absorb (low porosity)", porosityPoints: 0 },
+      { text: "Absorbs moisture steadily, holds it reasonably well (medium porosity)", porosityPoints: 1 },
+      { text: "Soaks up water instantly but feels dry again quickly (high porosity)", porosityPoints: 2 },
+      { text: "I honestly don't know", porosityPoints: 1 }
     ]
   },
   {
     id: 4,
-    question: "How many Stack Overflow tabs do you currently have open?",
+    question: "Is your hair chemically processed or heat damaged?",
     answers: [
-      { text: "47 tabs: half SO, half tutorials, also YouTube playing in background 🐶", points: { puppy: 1 } },
-      { text: "3-5 tabs of helpful community discussions", points: { golden: 1 } },
-      { text: "1-2, and only after exhausting official documentation", points: { collie: 1 } },
-      { text: "TOO MANY AND THEY'RE ALL STRESSING ME OUT", points: { husky: 1 } },
-      { text: "Zero. I AM Stack Overflow", points: { chihuahua: 1 } },
-      { text: "1. Found my answer, closed it", points: { corgi: 1 } },
-      { text: "5-6, worried my question is too dumb to ask", points: { dane: 1 } },
-      { text: "23+ from following rabbit holes for the past 3 hours", points: { beagle: 1 } },
-      { text: "0. Already implemented solution from first result", points: { greyhound: 1 } }
+      { text: "Virgin hair — no color, relaxer, or heat damage", porosityPoints: 0 },
+      { text: "Color treated only", porosityPoints: 1 },
+      { text: "Heat damaged or previously relaxed", porosityPoints: 2 },
+      { text: "Color treated AND heat damaged/chemically processed", porosityPoints: 2 }
     ]
   },
   {
     id: 5,
-    question: "You just made your code work, but you don't know why:",
+    question: "What is your main hair concern?",
     answers: [
-      { text: "🎉 CELEBRATE LIKE I WON THE LOTTERY 🎉 then panic it might break 🐶", points: { puppy: 1 } },
-      { text: "Share with team! Let's learn together why it works!", points: { golden: 1 } },
-      { text: "Unacceptable. Must understand completely before proceeding", points: { collie: 1 } },
-      { text: "IT WORKS! ...WAIT WHY DOES IT WORK?! *NEW PANIC*", points: { husky: 1 } },
-      { text: "Works = victory. Who cares why", points: { chihuahua: 1 } },
-      { text: "Make mental note to revisit later (probably won't)", points: { corgi: 1 } },
-      { text: "Carefully document what I did, just in case", points: { dane: 1 } },
-      { text: "Spend next 2 hours investigating why instead of moving on", points: { beagle: 1 } },
-      { text: "Ship it. Next task.", points: { greyhound: 1 } }
+      { text: "Frizz and humidity" , porosityPoints: 2},
+      { text: "Dryness and hydration" , porosityPoints: 2},
+      { text: "Shrinkage and definition" , porosityPoints: 1},
+      { text: "Breakage and damage" , porosityPoints: 2}
     ]
   }]
+
+
+
+
