@@ -60,13 +60,13 @@ function Dashboard({ weatherData, hairData, loadingState }) {
             position: 'relative',
             overflow: 'hidden'
           }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '6px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '6px' }}>
               <span style={{ fontSize: '56px', lineHeight: 1 }}>🌦️</span>
               <div>
                 <div style={{ fontFamily: 'Ranchers, cursive', fontSize: '64px', lineHeight: 1, color: '#F5F5F5', letterSpacing: '-2px' }}>
                   {Math.round(weatherData.main.temp)}<span style={{ fontSize: '28px', color: '#666', verticalAlign: 'top', marginTop: '8px', display: 'inline-block' }}>°C</span>
                 </div>
-                <div style={{ fontSize: '12px', color: '#777', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '2px' }}>
+                <div style={{ fontSize: '12px', color: '#F5F5F5', textTransform: 'uppercase', letterSpacing: '2px', marginTop: '2px' }}>
                   {weatherData.weather[0].description}
                 </div>
               </div>
@@ -77,17 +77,17 @@ function Dashboard({ weatherData, hairData, loadingState }) {
               <div style={{ flex: 1, background: '#1a1a1a', border: '1px solid #2a2a2a', borderRadius: '14px', padding: '10px 8px', textAlign: 'center' }}>
                 <span style={{ fontSize: '16px' }}>💧</span>
                 <span style={{ fontFamily: 'Ranchers, cursive', fontSize: '18px', color: '#00F5D4', display: 'block', marginTop: '2px' }}>{weatherData.main.humidity}%</span>
-                <span style={{ fontSize: '9px', color: '#555', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginTop: '2px' }}>Humidity</span>
+                <span style={{ fontSize: '9px', color: '#F5F5F5', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginTop: '2px' }}>Humidity</span>
               </div>
               <div style={{ flex: 1, background: '#1a1a1a', border: '1px solid #2a2a2a', borderRadius: '14px', padding: '10px 8px', textAlign: 'center' }}>
                 <span style={{ fontSize: '16px' }}>🌡️</span>
                 <span style={{ fontFamily: 'Ranchers, cursive', fontSize: '18px', color: '#00F5D4', display: 'block', marginTop: '2px' }}>{Math.round(weatherData.main.feels_like)}°</span>
-                <span style={{ fontSize: '9px', color: '#555', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginTop: '2px' }}>Feels Like</span>
+                <span style={{ fontSize: '9px', color: '#F5F5F5', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginTop: '2px' }}>Feels Like</span>
               </div>
               <div style={{ flex: 1, background: '#1a1a1a', border: '1px solid #2a2a2a', borderRadius: '14px', padding: '10px 8px', textAlign: 'center' }}>
                 <span style={{ fontSize: '16px' }}>💨</span>
                 <span style={{ fontFamily: 'Ranchers, cursive', fontSize: '18px', color: '#00F5D4', display: 'block', marginTop: '2px' }}>{Math.round(weatherData.wind.speed)}m/s</span>
-                <span style={{ fontSize: '9px', color: '#555', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginTop: '2px' }}>Wind</span>
+                <span style={{ fontSize: '9px', color: '#F5F5F5', textTransform: 'uppercase', letterSpacing: '1px', display: 'block', marginTop: '2px' }}>Wind</span>
               </div>
             </div>
           </div>
